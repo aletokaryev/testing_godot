@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://c4ofe2mi0tu7n"]
+[gd_scene format=4 uid="uid://c4ofe2mi0tu7n"]
+
+[ext_resource type="PackedScene" uid="uid://i2s7wfwrdjdn" path="res://Scenes/TileMap/terrein.tscn" id="1_1r6ip"]
+[ext_resource type="PackedScene" uid="uid://c4l0iw2ffvg5h" path="res://Scenes/Player/player.tscn" id="2_lixft"]
 
 [node name="Main" type="Node2D" unique_id=284100780]
+position = Vector2(236, 254)
+
+[node name="Terrein" parent="." unique_id=619274804 instance=ExtResource("1_1r6ip")]
+tile_map_data = PackedByteArray("AAD9/wAAAAAAAAYAAAD+/wAAAAABAAYAAAD//wAAAAABAAYAAAAAAAAAAAABAAYAAAABAAAAAAABAAYAAAACAAAAAAACAAYAAAACAP//AAABAAYAAGACAP7/AAABAAYAAGACAP3/AAABAAYAAGACAPz/AAACAAUAAAACAPv/AAACAAQAAAABAPv/AAABAAQAAAAAAPv/AAABAAQAAAD///v/AAABAAQAAAD+//v/AAABAAQAAAD9//v/AAAAAAQAAAD9//z/AAAAAAUAAAD9//3/AAAAAAUAAAD9//7/AAAAAAUAAAD9////AAAAAAUAAAD+//z/AAABAAUAAAD+//3/AAABAAUAAAD+//7/AAABAAUAAAD///7/AAABAAUAAAAAAP7/AAABAAUAAAAAAP3/AAABAAUAAAD///3/AAABAAUAAAD/////AAABAAUAAAAAAP//AAABAAUAAAABAP//AAABAAUAAAABAP7/AAABAAUAAAABAP3/AAABAAUAAAAAAPz/AAABAAUAAAD///z/AAABAAUAAAABAPz/AAABAAUAAAD+////AAABAAUAAAA=")
+
+[node name="Player" parent="." unique_id=1258609793 instance=ExtResource("2_lixft")]
+position = Vector2(-5, -11)
